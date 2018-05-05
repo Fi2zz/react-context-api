@@ -4,7 +4,7 @@ import "./App.css";
 
 import Hello from "./Hello";
 import Person from "./Person";
-import { MyProvider } from "./context";
+import { MyProvider, Consumer } from "./context";
 
 const value = {
   state: "your states",
@@ -14,7 +14,7 @@ const value = {
 export default class App extends Component {
   render() {
     return (
-      <MyProvider>
+      <MyProvider a={{ value }}>
         <div className="App">
           <div>
             <img src={logo} className="App-logo" alt="logo" />

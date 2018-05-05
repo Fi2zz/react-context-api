@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import { Consumer } from "./context";
 export default class Person extends Component {
+  componentDidMount() {
+    console.log(this);
+  }
+
   render() {
     return (
       <div className="person">
