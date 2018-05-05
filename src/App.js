@@ -1,17 +1,17 @@
-import React, { Component, createContext } from "react";
+import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
 import Hello from "./Hello";
-import Person from "./person";
-import { MyProvider, Consumer } from "./context";
+import Person from "./Person";
+import { MyProvider } from "./context";
 
 const value = {
   state: "your states",
   action: "your actions"
 };
 
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
       <MyProvider>
@@ -46,21 +46,3 @@ class App extends Component {
     );
   }
 }
-
-// export default App;
-
-// class App extends Component {
-//   render() {
-//     return (
-//       <MyProvider>
-//         <div>
-//           <p>I am the app</p>
-//           <Person />
-//           <Hello />
-//         </div>
-//       </MyProvider>
-//     );
-//   }
-// }
-
-export default App;

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Consumer } from "./context";
-class Person extends Component {
+export default class Person extends Component {
   render() {
     return (
       <div className="person">
@@ -20,5 +20,3 @@ class Person extends Component {
     );
   }
 }
-
-export default Person;
